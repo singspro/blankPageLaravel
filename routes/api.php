@@ -19,4 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/hookmessage',[whatsappApi::class,'getMessage']);
+Route::get('/hookmessage',[whatsappApi::class,'getMessage']);
